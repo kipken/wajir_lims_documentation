@@ -35,7 +35,7 @@ The County LIMS system is designed to help manage land-related processes in Waji
 ---
 ## User Management
 This system is role based meaning once the user has been assigned a role by the **SYSTEM_ADMINISTRATOR**, they can then be granted permissions to view different resources. For instance, a LAND_ADMINISTRATOR can only act on land admin tasks and
-cannot for instance be allowed to edit say payment logs which is in the purview of the **FINANCE_OFFICER**.
+cannot for instance be allowed to edit say payment logs which is granted to the **FINANCE_OFFICER**.
 The following are the valid roles as per the time this document was prepared, subject to be change as guided by the County team.
 
 ```python
