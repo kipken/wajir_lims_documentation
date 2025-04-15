@@ -9,6 +9,7 @@ This README provides information on the structure of the system, how the transac
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [User Management](#user-management)
 - [Modules and Service Prefixes](#modules-and-service-prefixes)
   - [County Modules](#county-modules)
   - [SubBusiness Process](#subbusiness-process)
@@ -32,7 +33,44 @@ The County LIMS system is designed to help manage land-related processes in Waji
 3. **Transaction Code**: A unique identifier for each transaction that includes details about the module, service, and the specific operation.
 
 ---
+## User Management
+This system is role based meaning once the user has been assigned a role by the **SYSTEM_ADMINISTRATOR**, they can then be granted permissions to view different resources. For instance, a LAND_ADMINISTRATOR can only act on land admin tasks and
+cannot for instance be allowed to edit say payment logs which is in the purview of the **FINANCE_OFFICER**.
+The following are the valid roles as per the time this document was prepared, subject to be change as guided by the County team.
 
+```python
+UserRoles = [
+      SURVEYOR,
+      COUNTY_LAND_REGISTRAR,
+      PHYSICAL_PLANNER,
+      FINANCE_OFFICER,
+      LAND_ADMINISTRATOR,
+      SYSTEMS_ADMINISTRATOR,
+      ENVIRONMENTAL_OFFICER,
+      DIRECTOR_OF_LANDS,
+      CHIEF_OFFICER_LANDS,
+      COUNTY_ENGINEER,
+      COUNTY_ARCHITECT,
+      DIRECTOR_PHYSICAL_PLANNING
+ ]
+
+land_admin_roles = [
+    LAND_ADMINISTRATOR,
+    CHIEF_OFFICER_LANDS,
+    SURVEYOR,
+    DIRECTOR_OF_LANDS,
+    PHYSICAL_PLANNER
+]
+
+physical_planning_roles = [
+    DIRECTOR_PHYSICAL_PLANNING,
+    PHYSICAL_PLANNER,
+    COUNTY_ENGINEER,
+    ENVIRONMENTAL_OFFICER,
+    COUNTY_ARCHITECT,
+]
+```
+The SYSTEM_ADMINISTRATOR has the permissions to assign an already registered user the roles.
 ## Modules and Service Prefixes
 
 The system uses prefixes to identify different **modules** and **services**. The prefixes are defined in dictionaries that map service names to their corresponding codes and abbreviations.
