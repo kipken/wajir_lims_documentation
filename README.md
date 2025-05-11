@@ -153,7 +153,11 @@ PROCESS_PREFIXES = {
 ### Parcel Registration
 Here is the workflow diagram for parcel registration
 
-![Workflow of Parcel Reg ](Parcel_Registration.png)
+![Workflow of Parcel Reg ](parcel_reg_new.png)
+
+## Land Transfer
+Here is the Land transfer workflow diagram
+![Workflow of Parcel Reg ](LT_white_bg.png)
 
 ## Building Approval Plan
 
