@@ -186,7 +186,7 @@ A template for this file is available at `/backend/env.template`.
 The deployment script sets up NGINX as a reverse proxy for the application. The NGINX configuration includes:
 
 - HTTP to HTTPS redirection (if SSL is configured)
-- Proxy settings for the Node.js application
+- Proxy settings for the backend,geoserver,tileserver
 - Cache configuration for static assets
 - Security headers
 - Gzip compression
