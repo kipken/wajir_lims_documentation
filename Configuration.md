@@ -1,7 +1,8 @@
-# Wajir LIMS Deployment Guide
+
 
 <div align="center">
-<img src="/templates/wajir_logo.png" alt="ProSync Logo" width="200"/>
+   <h1>Wajir LIMS Deployment Guide</h1>
+<img src="wajir_logo.png" alt="ProSync Logo" width="200"/>
 <h3>Deployment Guide for Wajir LIMS</h3>
 <p><em>Version 1.0 | May 2025</em></p>
 </div>
