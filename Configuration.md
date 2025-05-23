@@ -437,10 +437,6 @@ You could then go ahead with the running the scripts to prepopulate the database
 | `python3 manage.py makemigrations`    | checks if there is any changes made to the models  |
 | `python3 manage.py migrate`           | Applies changes to the database                    |
 | `python3 manage.py update_boundaries` | Populates the database with county & ward data     |
-| `python3 manage.py `                  | Deploys the ProSync application code               |
-| `initial-data-setup.sh`               | Populates the database with essential initial data |
-| `setup-backups.sh`                    | Configures automated backups                       |
-| `setup-monitoring.sh`                 | Sets up system monitoring                          |
 
 
 ### File Locations
