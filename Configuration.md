@@ -347,7 +347,7 @@ To check on the status of different services in Wajir LIMS navigate to the follo
 
 Example
 
-[Portainer Dashboard ](https://localhost:8083/portainer/)
+[Portainer Dashboard ](https://45.76.61.147:9443)
 
 Ideal production access to the portainer dashboard as indicated below
 
